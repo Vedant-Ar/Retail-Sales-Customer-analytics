@@ -203,6 +203,9 @@ An interactive Power BI dashboard was developed with four main analytical sectio
 - Monthly transaction value
 - Top 10 products by revenue
 
+#### Dashboard Preview
+![Overview](https://raw.githubusercontent.com/Vedant-Ar/Retail-Sales-Customer-analytics/main/Retail%20Analysis/images/1_Overview.png)
+
 ### Page 2 — Product & Inventory
 
 - Product-level revenue performance
@@ -210,6 +213,9 @@ An interactive Power BI dashboard was developed with four main analytical sectio
 - Inventory status distribution
 - ABC classification
 - Products requiring restocking
+
+#### Dashboard Preview  
+![Product & Inventory](https://raw.githubusercontent.com/Vedant-Ar/Retail-Sales-Customer-analytics/main/Retail%20Analysis/images/2_Product%20%26%20Inventory.png)
 
 ### Page 3 — Customer Analytics
 
@@ -219,6 +225,9 @@ An interactive Power BI dashboard was developed with four main analytical sectio
 - Customer demographics by age group
 - Purchase frequency distribution
 
+#### Dashboard Preview  
+![Customer Analysis](https://raw.githubusercontent.com/Vedant-Ar/Retail-Sales-Customer-analytics/main/Retail%20Analysis/images/3_Customer%20Analysis.png)
+
 ### Page 4 — Business Insights
 
 - Key business findings and objectives
@@ -227,6 +236,14 @@ An interactive Power BI dashboard was developed with four main analytical sectio
 - ABC revenue contribution
 - Customer segment details
 - Restocking priority list
+
+#### Dashboard Preview  
+![Business Insights](https://raw.githubusercontent.com/Vedant-Ar/Retail-Sales-Customer-analytics/main/Retail%20Analysis/images/4_Insights.png)
+
+### Page 5 — Key Findings
+
+#### Dashboard Preview  
+![Business Findings](<Retail Analysis/images/5_Business Findings.png>)
 
 ### Interactive Features
 
