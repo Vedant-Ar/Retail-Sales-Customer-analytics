@@ -243,7 +243,7 @@ An interactive Power BI dashboard was developed with four main analytical sectio
 ### Page 5 — Key Findings
 
 #### Dashboard Preview  
-![Business Findings](<Retail Analysis/images/5_Business Findings.png>)
+![Business Findings](Retail%20Analysis/images/5_Business_Findings.png)
 
 ### Interactive Features
 
@@ -401,11 +401,11 @@ Retail-Sales-Customer-Analytics/
 
 ## Author
 
-**[Your Name]**
+## Vedant Arora
 
-Aspiring Data Analyst | SQL | Python | Power BI
+B.Tech Student | Aspiring Data Analyst
 
-[LinkedIn](YOUR_LINKEDIN_URL) • [GitHub](YOUR_GITHUB_URL)
+Technical Interests: Python, SQL, Power BI, Data Analytics and Business Intelligence.
 
 ---
 
