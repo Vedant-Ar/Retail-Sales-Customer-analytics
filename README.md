@@ -21,8 +21,24 @@ This project investigates five key business questions:
 **Objective:** Build an end-to-end analytics solution that converts raw retail data into reliable metrics, identifies business opportunities, and supports better decision-making.
 
 ---
+## 2. Why I Chose This Project
 
-## 2. Technology Stack
+I selected retail analytics because retail businesses generate large volumes of transactional, customer and inventory data, but the real challenge lies in converting that information into meaningful business decisions.
+
+I wanted to work on a practical business problem that went beyond basic sales reporting and involved multiple dimensions of business performance.
+
+Retail analytics provided an opportunity to investigate important business challenges, including:
+
+Identifying products and categories that generate the highest revenue.
+Detecting pricing inconsistencies that can distort financial reporting.
+Understanding inventory shortages and excess stock.
+Identifying high-value customers and customers at risk of disengagement.
+Analysing repeat purchasing patterns and customer retention.
+Translating analytical findings into actionable business recommendations.
+I also chose this project to demonstrate my ability to work across the complete analytics lifecycle using SQL for data management and analysis, Python for statistical exploration and Power BI for interactive business reporting.
+
+---
+## 3. Technology Stack
 
 | Technology | Purpose |
 |---|---|
@@ -37,7 +53,7 @@ This project investigates five key business questions:
 
 ---
 
-## 3. Dataset Overview
+## 4. Dataset Overview
 
 The project uses three interconnected datasets:
 
@@ -59,7 +75,7 @@ The sales data covers January–July 2023.
 
 ---
 
-## 4. Data Cleaning & Quality Assurance | MySQL
+## 5. Data Cleaning & Quality Assurance | MySQL
 
 Data quality was investigated before performing business analysis. The original raw tables were preserved, and separate cleaned tables were created.
 
@@ -95,7 +111,7 @@ This demonstrates why data validation is essential before performing revenue ana
 
 ---
 
-## 5. SQL Analysis
+## 6. SQL Analysis
 
 The SQL analysis was organized into six stages.
 
@@ -153,7 +169,7 @@ Window functions and cumulative distribution scoring were used to assign RFM sco
 
 ---
 
-## 6. Python Analysis & Statistical Validation
+## 7. Python Analysis & Statistical Validation
 
 Python was used to further investigate the cleaned data, explore purchasing patterns, visualize relationships and statistically validate customer behaviour.
 
@@ -170,6 +186,29 @@ Python was used to further investigate the cleaned data, explore purchasing patt
 ### Statistical Hypothesis Testing
 
 Three statistical tests were performed to investigate the relationship between purchasing frequency and customer revenue.
+
+## 1. Spearman Correlation
+The notebook reports a correlation coefficient of 0.8387 between purchase frequency and customer revenue, with a p-value below 0.001.
+
+This indicates a strong positive association.
+
+## 2. Mann–Whitney U Test
+The notebook reports a statistically significant difference in revenue distributions between repeat and one-time customers.
+
+Reported median revenue:
+
+One-time customers: 104.54
+Repeat customers: 672.96
+
+## 3. Kruskal–Wallis Test
+The notebook reports differences in revenue distributions across purchase-frequency groups.
+
+Reported median revenue:
+
+One-time: 104.54
+Occasional: 342.72
+Frequent: 811.88
+These results suggest that purchase-frequency groups exhibit different spending behaviour.
 
 | Test | Result | Finding |
 |---|---|---|
@@ -191,7 +230,7 @@ The statistical tests establish associations and differences in revenue distribu
 
 ---
 
-## 7. Power BI Dashboard
+## 8. Power BI Dashboard
 
 An interactive Power BI dashboard was developed with four main analytical sections.
 
@@ -202,6 +241,9 @@ An interactive Power BI dashboard was developed with four main analytical sectio
 - Revenue by product category
 - Monthly transaction value
 - Top 10 products by revenue
+
+#### Business Value
+Provides a quick understanding of overall business performance and highlights categories or periods that require further investigation.  
 
 #### Dashboard Preview
 ![Overview](https://raw.githubusercontent.com/Vedant-Ar/Retail-Sales-Customer-analytics/main/Retail%20Analysis/images/1_Overview.png)
@@ -214,6 +256,9 @@ An interactive Power BI dashboard was developed with four main analytical sectio
 - ABC classification
 - Products requiring restocking
 
+#### Business Value
+Helps prioritise high-revenue products, identify inventory risks and improve stock allocation decisions.
+
 #### Dashboard Preview  
 ![Product & Inventory](https://raw.githubusercontent.com/Vedant-Ar/Retail-Sales-Customer-analytics/main/Retail%20Analysis/images/2_Product%20%26%20Inventory.png)
 
@@ -224,6 +269,11 @@ An interactive Power BI dashboard was developed with four main analytical sectio
 - Repeat customer KPI
 - Customer demographics by age group
 - Purchase frequency distribution
+
+#### Business Value
+Enables management to identify valuable customers, monitor customer behaviour and develop targeted retention or reactivation campaigns.
+
+Note: RFM segment values are precomputed in the SQL output for the selected analysis period. A Power BI date slicer does not automatically recalculate those RFM scores unless the underlying measures are redesigned to do so.
 
 #### Dashboard Preview  
 ![Customer Analysis](https://raw.githubusercontent.com/Vedant-Ar/Retail-Sales-Customer-analytics/main/Retail%20Analysis/images/3_Customer%20Analysis.png)
@@ -240,7 +290,15 @@ An interactive Power BI dashboard was developed with four main analytical sectio
 #### Dashboard Preview  
 ![Business Insights](https://raw.githubusercontent.com/Vedant-Ar/Retail-Sales-Customer-analytics/main/Retail%20Analysis/images/4_Insights.png)
 
-### Page 5 — Key Findings
+### Page 5 — Business Recommendations
+
+Translates analytical findings into proposed actions, including:
+
+- Prioritising Class A inventory.
+- Investigating low-performing products.
+- Reviewing revenue fluctuations.
+- Improving inventory allocation.
+- Strengthening customer retention.
 
 #### Dashboard Preview  
 ![Business Findings](Retail%20Analysis/images/5_Business_Findings.png)
@@ -259,7 +317,7 @@ The dashboard includes filters for relevant dimensions such as:
 
 ---
 
-## 8. Key Business Findings
+## 9. Key Business Findings
 
 The following findings are based on the cleaned transaction data, exported SQL analysis and Power BI dashboard.
 
@@ -331,7 +389,7 @@ The restock priority analysis identifies six products requiring immediate attent
 
 ---
 
-## 9. Business Recommendations
+## 10. Business Recommendations
 
 Based on the analysis, the following actions can be considered:
 
@@ -346,7 +404,7 @@ Based on the analysis, the following actions can be considered:
 
 ---
 
-## 10. Project Structure
+## 11. Project Structure
 
 A suggested repository structure for organizing the project:
 
@@ -398,7 +456,37 @@ Retail-Sales-Customer-Analytics/
 ```
 
 ---
+## 12. Skills Demonstrated
+SQL & Database Analysis
 
+- MySQL
+- Data cleaning and transformation
+- Joins and aggregations
+- CTEs and subqueries
+- Window functions
+- Ranking and percentile analysis
+- RFM customer segmentation
+- ABC product classification
+- Python & Statistical Analysis
+
+Pandas and NumPy
+- Exploratory Data Analysis
+- Matplotlib and Seaborn
+- Statistical hypothesis testing
+- Correlation analysis
+- Bootstrap resampling
+- K-Means clustering
+- Model evaluation metrics
+- Business Intelligence
+
+Power BI
+- DAX
+- KPI development
+- Interactive dashboards
+- Data visualisation
+- Business insights and recommendations
+
+---
 ## Author
 
 ## Vedant Arora
