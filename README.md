@@ -1,4 +1,4 @@
-# Retail Sales & Customer Analytics | SQL • Python • Power BI
+# Retail Sales & Customer Analytics | SQL | Python | Power BI
 
 An end-to-end retail analytics project transforming raw transactional data into actionable business insights through **MySQL, Python, and Power BI**.
 
